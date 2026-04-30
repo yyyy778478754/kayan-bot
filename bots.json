@@ -1,0 +1,7 @@
+[
+  {"name": "بوت تحميل يوتيوب", "desc": "يحمل فيديو وصوت بكل الجودات من يوتيوب", "link": "https://t.me/utubebot"},
+  {"name": "بوت ترجمة قوقل", "desc": "يترجم 100 لغة بدقة عالية", "link": "https://t.me/YTranslateBot"},
+  {"name": "بوت حذف الخلفية", "desc": "يشيل خلفية أي صورة بثانية وحدة", "link": "https://t.me/removebg_bot"},
+  {"name": "بوت زخرفة اسماء", "desc": "يزخرف اسمك عربي وانجليزي بأشكال فخمة", "link": "https://t.me/NamesDecorationsBot"},
+  {"name": "بوت تحويل PDF", "desc": "يحول الصور والنصوص الى PDF", "link": "https://t.me/topdf_bot"}
+]
