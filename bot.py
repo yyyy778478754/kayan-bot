@@ -1,7 +1,8 @@
+import os
 from flask import Flask, request
 import requests
 
-TOKEN = "8703354892:AAFp_T3Tx_f7_e4LZeUOB78w55VgiMWchfE"
+TOKEN = os.environ['TOKEN']
 app = Flask(__name__)
 
 def send_message(chat_id, text):
@@ -19,7 +20,10 @@ def webhook():
         chat_id = data["message"]["chat"]["id"]
         text = data["message"].get("text", "")
         if text == "/start":
-            send_message(chat_id, "اشتغلنا على Render 🚀 فل يا كيان")
+            send_message(chat_id, "البوت شغال على Render ✅")
         else:
             send_message(chat_id, f"كتبت: {text}")
     return "ok"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
